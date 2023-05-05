@@ -1,0 +1,35 @@
+.header {
+    width: 100%;
+    min-height: 100px;
+    padding: 33.5px 0 31.5px 0;
+    position: fixed;
+    top: 0;
+    background: rgba(16, 16, 29, 0.9);
+    z-index: 100;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 769px) {
+        flex-direction: column;
+    }
+}
+
+.header__logo {
+    font-weight: 800;
+    font-size: rem(28);
+    line-height: prc(33, 28);
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    span {
+        color: #42A9ED;
+    }
+    @media (max-width: 769px) {
+        margin-bottom: 20px;
+    }
+}
+
+.header__menu {}

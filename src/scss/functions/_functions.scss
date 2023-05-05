@@ -1,0 +1,16 @@
+@use 'sass:math';
+
+@function prc($a, $b) {
+    $res: math.div($a, $b) * 100%;
+    @return $res;
+}
+
+@function rem($a) {
+    $res: math.div($a, 16) + rem;
+    @return $res;
+}
+
+@function em($a, $b) {
+    $res: math.div($a, $b) + em;
+    @return $res;
+}

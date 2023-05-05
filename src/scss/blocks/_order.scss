@@ -1,0 +1,33 @@
+.order {
+    background: url('images/bg_order.png') center center/cover no-repeat;
+}
+
+.order__title {
+    @include ad('margin-bottom', 30, 15, 0);
+    font-weight: 800;
+    @include ad('font-size', 36, 24, 0);
+    line-height: prc(43, 36);
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+
+    span {
+        color: #42A9ED;
+    }
+}
+
+.order__subtitle {
+    @include ad('margin-bottom', 80, 30, 0);
+    font-size: rem(18);
+    line-height: prc(22, 18);
+    text-align: center;
+    color: #BBBBBB;
+}
+
+.order__items {
+    @include ad('margin-bottom', 80, 30, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

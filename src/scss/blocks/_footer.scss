@@ -1,0 +1,107 @@
+.footer {
+    padding: 30px 0;
+    background-color: rgba(61, 64, 80, 1);
+    color: #fff;
+
+    span {
+        width: 1px;
+        height: 18px;
+        background-color: #C3C3C3;
+    }
+    @media (max-width: 769px) {
+        span {
+            display: none;
+        }
+    }
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 769px) {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    @media (max-width: 426px) {
+        align-items: flex-start;
+    }
+}
+
+.footer__reserved {
+    font-size: rem(13);
+    line-height: em(16, 13);
+}
+
+.footer__money {
+    display: flex;
+    column-gap: 38px;
+    font-size: rem(13);
+    line-height: em(16, 13);
+    color: #C3C3C3;
+    @media (max-width: 1200px) {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    @media (max-width: 769px) {
+        flex-direction: row;
+    }
+    @media (max-width: 426px) {
+        flex-direction: column;
+    }
+}
+
+.footer__item {
+    position: relative;
+    padding-left: 30px;
+    color: #C3C3C3;
+    &:hover {
+        color: #c3c3c37c;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        background: url('icons/footer_qiwi.svg') center center/cover no-repeat;
+    }
+    &_yandex {
+        &::before {
+            background: url('icons/footer_yandex.svg') center center/cover no-repeat;
+        }
+    }
+    &_web {
+        &::before {
+            background: url('icons/footer_webmoney.svg') center center/cover no-repeat;
+        }
+    }
+    &_email {
+        color: #fff;
+        &::before {
+            background: url('icons/footer_email.svg') center center/contain no-repeat;
+        }
+    }
+    &_vk {
+        color: #fff;
+        &::before {
+            background: url('icons/footer_vk.svg') center center/contain no-repeat;
+        }
+    }
+}
+
+.footer__social {
+    display: flex;
+    column-gap: 38px;
+    @media (max-width: 1200px) {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    @media (max-width: 769px) {
+        flex-direction: row;
+    }
+    @media (max-width: 426px) {
+        flex-direction: column;
+    }
+}

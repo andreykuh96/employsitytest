@@ -1,0 +1,17 @@
+.main {
+}
+.main__promo {
+    min-height: 100vh;
+    padding: 100px 0 50px 0;
+    @media (max-width: 769px) {
+        padding: 140px 0 0 0;
+    }
+    @media (max-width: 427px) {
+        padding: 240px 0 0 0;
+    }
+}
+.main__order {
+    min-height: 100vh;
+    @include ad('padding-top', 121, 30, 0);
+    @include ad('padding-bottom', 151, 30, 0);
+}

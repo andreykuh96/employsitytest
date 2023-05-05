@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import 'css/rebootcss';
+@import 'scss/functions/functions';
+@import 'scss/mixins/adaptive';
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-Regular.eot');
+    src: url('./fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Lato-Regular.woff') format('woff'),
+        url('./fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-SemiboldItalic.eot');
+    src: url('./fonts/Lato-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Lato-SemiboldItalic.woff') format('woff'),
+        url('./fonts/Lato-SemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-Bold.eot');
+    src: url('./fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Lato-Bold.woff') format('woff'),
+        url('./fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-Heavy.eot');
+    src: url('./fonts/Lato-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Lato-Heavy.woff') format('woff'),
+        url('./fonts/Lato-Heavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Lato';
+    font-weight: 400;
+}
+
+.wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container {
+    max-width: rem(1172 + 30);
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@import './scss/blocks/header';
+@import './scss/blocks/menu-header';
+@import './scss/blocks/main';
+@import './scss/blocks/promo';
+@import './scss/blocks/btn';
+@import './scss/blocks/order';
+@import './scss/blocks/form';
+@import './scss/blocks/item-order';
+@import './scss/blocks/footer';
